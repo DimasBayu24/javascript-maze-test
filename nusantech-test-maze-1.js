@@ -1,3 +1,5 @@
+// Code for the first maze pattern given in the test.
+
 const maze = (size) => {
   let parameter;
   let value = '\n'; // variable value will contain the final answer
@@ -25,9 +27,13 @@ const maze = (size) => {
       }
       value += '\n';
     }
-    return console.log(`here's a maze made by length of ${size}\n${value}`);
+    return console.log(`Here's a maze made by length of ${size}\n${value}`);
   } else {
-    return console.log('error');
+    return console.log(
+      "You can't input an even number or number lower than 5 "
+    );
   }
 };
-maze(7);
+maze(7); // <-- Change the number as you like
+// Please input an odd number and higher than 4 so it's not give any error
+// And don't put high digit number so it can still looks like a maze pattern
